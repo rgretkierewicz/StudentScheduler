@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:background="@color/lightBlue">
+
+            <Button
+                android:id="@+id/termsButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:padding="10sp"
+                android:text="Terms"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:background="@color/lightBlue">
+
+            <Button
+                android:id="@+id/coursesButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:padding="10sp"
+                android:text="Courses"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:background="@color/lightBlue">
+
+            <Button
+                android:id="@+id/assessmentsButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:padding="10sp"
+                android:text="Assessments"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

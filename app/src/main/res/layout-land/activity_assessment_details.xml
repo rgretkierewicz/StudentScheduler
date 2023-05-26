@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AssessmentDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="ID: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editAssessmentID"
+                    android:editable="false"
+                    android:hint="Auto-Generated"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="Title: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editAssessmentTitle"
+                    android:hint="Mobile Application Development PA"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="Type: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editAssessmentType"
+                    android:hint="PA"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="Start: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editAssessmentStart"
+                    android:hint="03/18/2023"
+                    android:inputType="none"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="End: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editAssessmentEnd"
+                    android:hint="03/18/2023"
+                    android:inputType="none"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:text="Course: "
+                    android:textSize="15sp" />
+
+
+                <Spinner
+                    android:id="@+id/coursesSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="30dp">
+
+                    <Button
+                        android:id="@+id/saveAssessment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Save" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

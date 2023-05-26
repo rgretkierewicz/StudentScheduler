@@ -1,0 +1,203 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="ID: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editCourseID"
+                    android:editable="false"
+                    android:hint="Auto-Generated"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="Title: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editCourseTitle"
+                    android:hint="Mobile Application Development"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="Start: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editCourseStart"
+                    android:hint="03/18/2023"
+                    android:inputType="none"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="End: "
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editCourseEnd"
+                    android:hint="03/18/2023"
+                    android:inputType="none"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="Status:"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editCourseStatus"
+                    android:hint="Open"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="Instructor Info:"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editInstructorInfo"
+                    android:hint="Name, phone number, email"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="Note:"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/editNote"
+                    android:hint="[Optional]"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="Term:"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/termsSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <Button
+                        android:id="@+id/saveCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginStart="160dp"
+                        android:text="Save" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="453dp"
+        android:layout_marginTop="31dp"
+        android:text="Associated Assessments"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="453dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/assessmentRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
