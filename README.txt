@@ -2,9 +2,8 @@ Title: StudentScheduler
 Created by: Rosie Gretkierewicz - rgretkierewicz@yahoo.com
 
 Specifications:
-Developed using Android Dolphin 2021.3.1. The application’s target SDK version is API 33: Android Tiramisu and the minimum SDK Version is 28. 
 Compatible with Android 8.0 and higher.
-
+Developed using Android Dolphin 2021.3.1. The application’s target SDK version is API 33: Android Tiramisu and the minimum SDK Version is 28. 
 
 Description:
 StudentScheduler is a scheduling application that allows a user to view, create, update, and delete information for terms, courses, and assessments.
